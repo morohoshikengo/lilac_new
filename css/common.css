@@ -34,6 +34,12 @@ img {
     width: 100%;
 }
 
+body{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 64px;
+}
+
 .pc_display {
     display: block;
 }
@@ -101,6 +107,8 @@ header {
 footer {
     background-color: #54205C;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-inner {
@@ -131,6 +139,10 @@ footer {
 
 @media (max-width: 910px) {
 
+
+body{
+    padding-bottom: 51px;
+}
     .pc_display {
         display: none;
     }

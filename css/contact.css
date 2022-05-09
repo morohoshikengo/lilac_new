@@ -1,0 +1,134 @@
+main {
+    padding-top: 88px;
+}
+
+.main-inner {
+    max-width: 700px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-attract {
+    background-image: url('../image/contact-attract-pc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 179px;
+    width: 100%;
+    position: relative;
+}
+
+.contact-attract-text {
+    font-family: Noto Sans JP;
+    font-size: 50px;
+    font-weight: 350;
+    line-height: 72px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.contact-title {
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #9958A4;
+    margin-bottom: 16px;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form-contents-box {
+    margin-bottom: 16px;
+}
+
+.contact-form-label,
+.contact-form-input {
+    display: block;
+}
+
+.contact-form-label {
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #6F6F6F;
+    margin-bottom: 8px;
+}
+
+.contact-form-input {
+    border: #d1d1d1 solid 1px;
+    border-radius: 3px;
+    width: 100%;
+    height: 42px;
+    text-align: left;
+}
+
+.contact-form-textarea {
+    border: #d1d1d1 solid 1px;
+    border-radius: 3px;
+    width: 100%;
+    height: 82px;
+    text-align: left;
+}
+
+.contact-form-submit-box {
+    border: #9958A4 solid 1px;
+    border-radius: 3px;
+    width: 100%;
+    height: 42px;
+    display: flex;
+}
+
+.contact-form-submit-button {
+    width: 100%;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #9958A4;
+}
+
+@media (max-width: 910px) {
+
+    .main-inner {
+        max-width: 100%;
+    }
+
+    /*contact-attract*/
+
+    .contact-attract {
+        background-image: url('../image/top-attract-sp.png');
+        height: 128px;
+    }
+
+    .contact-attract-text {
+        font-size: 40px;
+        line-height: 58px;
+    }
+
+    .contact-title {
+        text-align: left;
+    }
+
+    .contact-form-submit-box {
+        height: 34px;
+    }
+}
