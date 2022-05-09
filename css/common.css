@@ -1,0 +1,248 @@
+/*common*/
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url('../fonts/NotoSansJP-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url('../fonts/NotoSansJP-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url('../fonts/NotoSansJP-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+
+
+@font-face {
+    font-family: 'DIN Alternate';
+    src: url('../fonts/DINAlternate-Bold.woff') format('opentype');
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.pc_display {
+    display: block;
+}
+
+.sp_display {
+    display: none;
+}
+
+/*header*/
+
+header {
+    height: 88px;
+    width: 100%;
+    padding: 27px 120px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 240px;
+}
+
+
+.header-nav-sm {
+    display: none;
+}
+
+.header-nav {
+    margin: 0 0 0 auto;
+}
+
+.header-ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.header-a {
+    color: #9958A4;
+    text-decoration: none;
+    display: block;
+    padding: 0 20px;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.purple-button {
+    padding: 4px 32px;
+    background-color: #9958A4;
+    color: white;
+    border-radius: 100px;
+}
+
+/*footer*/
+footer {
+    background-color: #54205C;
+    width: 100%;
+}
+
+.footer-inner {
+    padding: 16px 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1440px;
+    align-items: center;
+}
+
+.footer-copyright {
+    font-family: Noto Sans JP;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: white;
+}
+
+.footer-facebook-logo {
+    width: 32px;
+    height: 32px;
+}
+
+
+@media (max-width: 910px) {
+
+    .pc_display {
+        display: none;
+    }
+
+    .sp_display {
+        display: block;
+    }
+
+    header {
+        height: 61px;
+        padding: 16px 20px;
+    }
+
+    .header-logo {
+        width: 207px;
+        height: auto;
+    }
+
+    #hamburger {
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+        margin: 0 0 0 auto;
+        height: 24px;
+        width: 24px;
+    }
+
+    .icon span {
+        position: absolute;
+        left: 3px;
+        width: 18px;
+        height: 2px;
+        background-color: #9958A4;
+        border-radius: 8px;
+        transition: ease 0.75s;
+    }
+
+    .icon span:nth-of-type(1) {
+        top: 6px;
+    }
+
+    .icon span:nth-of-type(2) {
+        top: 11px;
+    }
+
+    .icon span:nth-of-type(3) {
+        bottom: 6px;
+    }
+
+    .close span:nth-of-type(1) {
+        transform: rotate(45deg);
+        top: 11.2px;
+    }
+
+    .close span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .close span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        top: 11.2px;
+    }
+
+    .header-nav-sm {
+        top: 61px;
+        left: 0px;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(249, 246, 248, 0.9);
+    }
+
+    .header-ul {
+        flex-direction: column;
+        max-width: 375px;
+        margin: 0 auto;
+        padding: 48px 20px;
+    }
+
+    .header-sp-a{
+        text-align: left;
+    color: #9958A4;
+    display: block;
+    padding: 0 20px;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+        margin-bottom: 48px;
+    }
+
+    .header-sp-li-purple-button{
+        width: 335px;
+        height: 58px;
+        padding: 16px 32px;
+        text-align: center;
+        border-radius: 100px;
+        background-color: #9958A4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-sp-a-purple-button {
+        color: white;
+        text-align: center;
+    }
+    /*footer*/
+
+    .footer-inner {
+        padding: 9.5px 20px;
+    }
+}
