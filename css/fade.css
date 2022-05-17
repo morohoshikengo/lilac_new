@@ -1,0 +1,118 @@
+/*fade in*/
+.fadeIn {
+    animation-name: fadeInAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInContents {
+    opacity: 0;
+}
+
+/*fade up*/
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.fadeUpContents {
+    opacity: 0;
+}
+
+/*slide*/
+.slide-in {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.slide-in_inner {
+    display: inline-block;
+
+}
+
+/* 上下のアニメーション*/
+.upAnime {
+    opacity: 0;
+    /* 事前に透過0 にして消しておく*/
+}
+
+.slideAnimeDownUp {
+    animation-name: slideTextY100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY100 {
+    from {
+        transform: translateY(100%);
+        /* 要素を上の枠外に移動*/
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        /* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+.slideAnimeUpDown {
+    animation-name: slideTextY-100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY-100 {
+    from {
+        transform: translateY(-100%);
+        /* 要素を下の枠外に移動*/
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        /* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+.animation-order-01 {
+    animation-delay: 0s;
+}
+
+.animation-order-02 {
+    animation-delay: 0.2s;
+}
+
+.animation-order-03 {
+    animation-delay: 0.4s;
+}

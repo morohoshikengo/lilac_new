@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/destyle.min.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/team.css" />
+    <link rel="stylesheet" href="./css/fade.css" />
   </head>
   <body>
       <header>
@@ -44,9 +45,10 @@
     <main>
       <div class="main-inner">
         <div class="team">
-          <h2 class="team-h2">Team</h2>
+          <h2 class="team-h2"><span class="slide-in upAnime">
+            <span class="slide-in_inner upAnimeInner">Team</span></span></h2>
           <div class="team-contents-wrapper">
-            <div class="team-contents">
+            <div class="team-contents fadeUpContents animation-order-01">
               <div class="team-contents-img">
                 <img src="./image/sasaki.png" alt="" />
               </div>
@@ -61,7 +63,7 @@
                 </p>
               </div>
             </div>
-            <div class="team-contents">
+            <div class="team-contents fadeUpContents animation-order-02">
               <div class="team-contents-img">
                 <img src="./image/iwakawa.png" alt="" />
               </div>
@@ -74,7 +76,7 @@
                 </p>
               </div>
             </div>
-            <div class="team-contents">
+            <div class="team-contents fadeUpContents animation-order-03">
               <div class="team-contents-img">
                 <img src="./image/ohira.png" alt="" />
               </div>
@@ -91,13 +93,14 @@
         </div>
 
         <div class="external-advisor">
-          <h2 class="external-advisor-h2">External advisor</h2>
+          <h2 class="external-advisor-h2"><span class="slide-in upAnime">
+            <span class="slide-in_inner upAnimeInner">External advisor</span></span></h2>
           <div class="external-advisor-contents-wrapper">
-            <div class="external-advisor-contents">
+            <div class="external-advisor-contents fadeUpContents">
               <div class="external-advisor-contents-img">
                 <img src="./image/takamura.png" alt="" />
               </div>
-              <div class="external-advisor-contents-text-contents">
+              <div class="external-advisor-contents-text-contents animation-order-01">
                 <p class="external-advisor-contents-text-name">高村　大</p>
                 <p class="external-advisor-contents-text-sub-name">
                   DAI TAKAMURA
@@ -110,7 +113,7 @@
                 </p>
               </div>
             </div>
-            <div class="external-advisor-contents">
+            <div class="external-advisor-contents fadeUpContents animation-order-02">
               <div class="external-advisor-contents-img">
                 <img src="./image/kitamura.png" alt="" />
               </div>
@@ -127,7 +130,7 @@
                 </p>
               </div>
             </div>
-            <div class="external-advisor-contents">
+            <div class="external-advisor-contents fadeUpContents animation-order-03">
               <div class="external-advisor-contents-img">
                 <img src="./image/siozu.png" alt="" />
               </div>
@@ -151,7 +154,8 @@
         </div>
 
         <div class="partner">
-          <h2 class="partner-h2">partner</h2>
+          <h2 class="partner-h2"><span class="slide-in upAnime">
+            <span class="slide-in_inner upAnimeInner">partner</span></span></h2>
           <div class="partner-contents-wrapper">
             <div class="partner-contents">
               <div class="partner-contents-img">
@@ -298,11 +302,7 @@
     </footer>
 
     <script src="jquery-3.6.0.min.js"></script>
-    <script>
-      $("#hamburger").on("click", function () {
-        $(".icon").toggleClass("close");
-        $(".header-nav-sm").slideToggle();
-      });
-    </script>
+    <script src="./script/hamburger.js"></script>
+    <script src="./script/fade.js"></script>
   </body>
 </html>
