@@ -108,6 +108,14 @@ main {
     color: #9958A4;
 }
 
+.end-message {
+    display: none;
+  }
+  
+  .false-message {
+    display: none;
+  }
+
 @media (max-width: 910px) {
 
     .main-inner {
